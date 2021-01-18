@@ -23,3 +23,27 @@
 
 'use strict';
 
+const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", "");
+
+const questionFilm = [];
+    questionFilm[0] = prompt("Один из последних просмотренных фильмов", "");
+    questionFilm[1] = prompt("Один из последних просмотренных фильмов", "");
+
+const questionStar = [];
+    questionStar[0] = prompt("На сколько оцените его?", "");
+    questionStar[1] = prompt("На сколько оцените его?", "");
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {
+        questionFilm: questionStar 
+    },
+    actors: {},
+    genres: [],
+    privat: false 
+};
+
+console.log(personalMovieDB.movies);
+
+
+
